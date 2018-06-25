@@ -7,6 +7,8 @@
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Info</title>
 </head>
 
@@ -15,10 +17,10 @@
   <header>
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1 tabindev="1"><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" tabindex="2">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -27,10 +29,10 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" tabindex=”-1”>
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
