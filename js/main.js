@@ -6,7 +6,7 @@ var markers = [];
 
 //Register service worker
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("js/sw/index.js");
+  navigator.serviceWorker.register("/index.js");
 }
 
 /**
@@ -170,7 +170,7 @@ createRestaurantHTML = (restaurant) => {
   image.alt = "Picture of " + restaurant.name;
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h');
   name.innerHTML = restaurant.name;
   li.append(name);
 
