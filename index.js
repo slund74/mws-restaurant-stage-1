@@ -18,14 +18,6 @@ self.addEventListener("install", function(event) {
 	);
 });
 
-// self.addEventListener("fetch", function(event) {
-// 	event.respondWith(
-// 		caches.match(event.request).then(function(response) {
-// 			return response || fetch(event.request);
-// 		})
-// 	);
-// });
-
 // Modeled after code from https://developers.google.com/web/fundamentals/primers/service-workers/
 
 self.addEventListener("fetch", function(event) {
